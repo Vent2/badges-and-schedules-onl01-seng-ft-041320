@@ -23,7 +23,7 @@ def printer(attendees)
     puts "#{assignment}"
   end
 
-  bades.each do |assignment|
+  badges.each do |assignment|
     puts "#{assignment}"
   end
 end
