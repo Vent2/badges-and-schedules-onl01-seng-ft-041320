@@ -15,13 +15,15 @@ def assign_rooms(attendees)
   new_room
 end
 
-def printer(name, rooms)
-  batch_badge_creator.each do |assign_rooms|
-    return batch_badge_creator
+def printer(attendees)
+  room_assignments = assign_rooms(attendees)
+  badges = batch_badge_creator(attendees)
+
+  room_assignments.each do |assignment|
+    puts "#{assignment}"
   end
-  assignrooms.each do |assign_rooms|
-    return assign_rooms
+
+  bades.each do |assignment|
+    puts "#{assignment}"
   end
-  new_yes << batch_badge_creator + assign_rooms
-  new_yes
 end
